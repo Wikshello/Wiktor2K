@@ -5,12 +5,112 @@
 			<meta charset="utf-8">
 			<title> Formularz Ejsmont </title>
 		</head>
-		<body>
+		<body style="margin:0; margin-left: 5px;">
 			<body bgcolor="#008080"> </body>
-	<p align="center"> <font color="white" size="10" face="Verdana"> ZADANIE 6 </font> </p> <br>
-		<p align="center" > <font color="lime" size="10">
-		Formularz Ejsmont <br> <br> 
-		Tu znajdzie się formularz <br> 
-		<A HREF="index.html"> Wróć </A> </font> </p>
+	<p align="center"> <font color="white" size="10" face="Verdana"> ZADANIE 6, 10 i 11 </font> </p> <br>
+		<p align="center" > <font color="lime" size="10"> 
+		Formularz Ejsmont </font> </p><br> <br>  
+		<br> <br><br> <br>
+
+		<form>
+			<table align="center" cellspacing="0" width="100%" height="900" style="font-size:25px; font-family: Times New Roman;">
+				<thead>
+					<tr  style="text-align: center;">
+						<td colspan="4" style="font-size:30px; text-align: left;"> <div style="padding-left: 50%"><b>Ankieta o rozgrywce </div>
+
+						<br> W celu weryfikacji musisz się zalogować </b>  </td> 
+						<td  width="300" > <br> <button onclick="newwindow=window.open('http://battle.net#')" style="height:60px; width:170px;"> <b>Strona Battle.net</b> </button> </td>
+						</tr>
+					<tr style="text-align: center;">
+						<td> <b>Login</b> <br> <input type="text" name="login" style="height:20px; width:170px;"></td>
+						<td> <b>Haslo</b> <br> <input type="password" name="password" style="height:20px; width:170px;"></td> 
+						<td> <b>E-mail</b> <br> <input type="text" name="email" style="height:20px; width:170px;"></td>
+						<td> <b>Wiek</b> <br> <input type="text" name="wiek" maxlength="3" style="height:20px; width:170px;"></td>
+						<td> <b> Podaj Date </b> <br> <input type="date"> </td>
+					</tr>
+				</thead>
+				<tbody style="max-height: 100;">
+					<tr>
+						<td colspan="2" rowspan="2" style="text-align:left; "> <b>Jakiej jesteś płci</b><br>
+							<input type="radio" name="plec" value="men" style="text-align:center;"> Mężczyzna <br>
+							<input type="radio" name="plec" value="women"> Kobieta <br>
+							<input type="radio" name="plec" value="inne"> Inne 
+						</td>
+						<td colspan="3" height="65">  <b> Co najczęściej kupujesz</b> <br>
+							<input type="radio" name="zakupy" value="przeputka"> Przepustkę  
+							<input type="radio" name="zakupy" value="skiny"> Skórki 
+							<input type="radio" name="zakupy" value="pakiety"> Pakiety
+							<input type="radio" name="zakupy" value="bronie"> Bronie
+							<input type="radio" name="zakupy" value="skrzynki"> Skrzynki
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3" height="65"> <b> Czy kolekcjonujesz przedmioty kosmetyczne </b><br>
+							<input type="radio" name="kosmetyki" value="darmowe"> Tylko darmowe
+							<input type="radio" name="kosmetyki" value="przeputka"> Tylko z przeputki
+							<input type="radio" name="kosmetyki" value="skrzynki"> Ze skrzynek
+							<input type="radio" name="kosmetyki" value="nie" > Nie
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"> <b> Na jakiej platformie grasz </b> <br> 
+							&nbsp &nbsp<select name="platforma" style="height:25px;">
+								<option value="PC"> PC </option>
+								<option value="XBOX"> XBOX </option>
+								<option value="PS"> PlayStation </option>
+								<option value="NS"> Nintendo </option>
+							</select> 
+						</td>
+						<td colspan="3" style="padding: 10px;"><b>Co przeszkadza ci w rozgrywce z wymienionych </b> <br>
+							 <input type="checkbox" name="problem" value="opuszczanie"> Opuszczanie meczy <br> 
+							 <input type="checkbox" name="problem" value="toksycznosc"> Toksyczność <br>
+							 <input type="checkbox" name="problem" value="balans"> Słaby balans postaci <br>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"> <b>W ile osób najczęściej grasz</b><br>
+							&nbsp &nbsp <select name="ileos" style="height:25px;">
+								<option value="Rozne"> Zależy od dnia</option>
+								<option value="Samemu"> Samemu</option>
+								<option value="2os"> W 2 osoby</option>
+								<option value="3os"> W 3 osoby </option>
+								<option value="cala" selected> Całą drużyną</option>
+							</select>
+						</td>
+						<td colspan="3" style="padding: 10px;"> <b>Jakie zmiany powinniśmy wprowadzić</b> <br> 
+							<input type="checkbox" name="zmiany" value="balans"> Zbalansować postacie <br>
+							<input type="checkbox" name="zmiany" value="postacie"> wprowadzić zamiany w mapach <br> 
+							<input type="checkbox" name="zmiany" value="ceny"> Ceny przedmiotów <br> 
+							<input type="checkbox" name="zmiany" value="wsparcie"> Działanie wsparcia gracza <br>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="5" style="padding: 5px;"> <b> Jakie problemy najczęściej spotkasz </b><br>
+							<input type="checkbox" name="problemy" value="brak"> Żadne 
+							<input type="checkbox" name="problemy" value="toksycznosc"> Toksyczność
+							<input type="checkbox" name="problemy" value="serwery"> Z serwerami 
+							<input type="checkbox" name="problemy" value="platnosci"> Z płatnoścami 
+							<input type="checkbox" name="problemy" value="inne"> Inne
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"> <div style="padding-left:30px;"><input type="text" value="Jeśli zaznaczyłeś inne, napisz jakie" style="height: 200px; width:300px;"> </div></td>
+						<td colspan="3" style="padding: 10px;"> <div style="padding-left:35%;"> <b> Opisz inne uwagi</b> <br> <textarea style="height:200px; width:350px;"> </textarea></div></td>
+					</tr>
+					<tr>
+						<td colspan="2" style="text-align:center;">  
+							Wpisz godzine o które najczęściej grasz <br> <input type="time"> <br>
+							Wybierz ulubiony kolor <br> <input type="color"> <br>
+							Ustaw poziom zaawansowania <br> <input type="range"> <br>
+							
+						</td>
+						<td> <a href="index.html"> <div style="padding-left:30%;"> <button> Strona główna </button> </a> </div></td>
+						<td> <div style="padding-left:40%;"><input type="reset" value="Resetuj" height="100" width="200"> </div></td>
+						<td> <div style="padding-left:20%;"> Oczekiwanie na przesłanie <progress> </progress> <br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="submit" value="Wyślij"></div></td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		<p align="center" > <font color="lime" size="10"><A HREF="index.html"> Wróć </A> </font> </p>
 		</body>
 	</html>
